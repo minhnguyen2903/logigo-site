@@ -1,0 +1,64 @@
+#section-logigo-locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+#section-logigo-locations > * {
+  flex-grow: 1;
+  flex-basis: 450px;
+}
+
+.location-section-img img  {
+  width: 100%;
+}
+
+.locations-section-content {
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locations-section-content b {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.locations-section-content p {
+  font-size: 28px;
+}
+
+.locations-section-content p:first-child {
+  margin-top: 60px;
+}
+
+.locations-section-content h3 {
+  font-size: 140px;
+  color: #DE4943;
+}
+
+.locations-section-content h4 {
+  font-size: 56px;
+  color: #DE4943;
+  text-transform: uppercase;
+}
+
+.locations-section-content p:last-child {
+  font-size: 47px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .locations-section-content h3 {
+    font-size: 82px;
+    color: #DE4943;
+  }
+  .locations-section-content b {
+    font-size: 24px;
+  }
+  .locations-section-content p {
+    font-size: 24px;
+  }
+}

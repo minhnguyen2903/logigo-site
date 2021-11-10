@@ -1,0 +1,230 @@
+#section-download-app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../psd-img/OCERHB0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.download-section-background {
+  position: absolute;
+  background: #DE4943;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+
+.cooperation {
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-end;
+  background: white;  
+  border-radius: 30px;
+  transform: translateY(-50%);
+}
+
+.cooperation h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-weight: 700;
+
+}
+
+.cooperation-companies {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 110px 0 120px 0;
+  margin-left: 50px;
+}
+
+.cooperation-companies img {
+  max-width: 100%;
+}
+
+.business-men {
+  position: relative;
+  flex-basis: 299px;
+  width: 554px;
+  height: 554px;
+}
+
+.business-men img {
+  position: absolute;
+  right: -85px;
+}
+
+.download-section-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 330px;
+}
+
+.download-section-letter {
+  width: 585px;
+}
+
+.download-section-img {
+  position: relative;
+  flex-basis: 414.3px;
+  max-height: 727px;
+  max-width: 727px;
+  min-height: 478px;
+  min-width: 478px;
+  flex-grow: 1;
+}
+
+.download-section-img img{
+  width: 727px;
+  height: 727px;
+}
+
+.download-section-letter h3 {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.download-section-letter p {
+  color: white;
+  font-size: 20px;
+  margin: 2em 0;
+}
+
+.download-section-letter a {
+  margin: 0 1em;
+}
+
+#section-download-app .content-container:last-child {
+  padding-bottom: 100px;
+}
+
+.mail-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em 0;
+  border: solid 1px #707070;
+  border-left: none;
+  border-right: none;
+  margin-top: 200px;
+}
+
+.mail-box > * {
+  display: flex;
+  align-items: center;
+}
+
+.mail-icon {
+  flex-grow: 0;
+  
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.mail-letter {
+  flex-grow: 1;
+  font-weight: 600;
+  flex-basis: 468px;
+  color: var(--color-light);
+}
+
+.mail-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.mail-button button {
+  display: block;
+  font-weight: 600;
+  padding: 10px 25px;
+  background: white;
+  border-radius: 22px;
+}
+
+@media only screen and (min-width: 1001px) {
+  .download-section-img img{
+    position: absolute;
+    left: -142px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content-container--calc {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+  .cooperation {
+    justify-content: center;
+
+  }
+  .cooperation-companies {
+    margin: 0 20px;
+  }
+  .business-men img {
+    position: relative;
+    right: 0;
+  }
+  .download-section-content {
+    justify-content: center;
+    margin-top: 550px;
+  }
+  .download-section-img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-grow: 0;
+  }
+  .download-section-img img {
+    position: relative;
+    object-fit: cover;
+    width: 478px;
+    height: 478px;
+  }
+
+  .download-section-letter {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cooperation-companies {
+    padding: 80px 0 20px 0;
+  }
+  .business-men {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+  }
+  .business-men img {
+    width: 100vw;
+  }
+  .mail-letter {
+    text-align: center;
+  }
+  .mail-button {
+    flex-grow: 1;
+    margin: 0;
+  }
+  .mail-button button {
+    flex-grow: 1;
+  }
+}

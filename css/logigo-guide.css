@@ -1,0 +1,154 @@
+
+#section-logigo-guide {
+  position: relative;
+  text-align: center;
+  padding: 150px 0 300px 0;
+  overflow: hidden;
+}
+
+#section-logigo-guide h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 100px 0;
+}
+
+.guideline-list {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap-reverse;
+}
+
+.guideline-list > * {
+  flex-grow: 1;
+  flex-basis: 472px;
+}
+
+.guideline-section {
+  padding-top: 50px;
+}
+
+.step {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-light);
+  min-width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.step-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.step-number {
+  background: var(--color-primary);
+}
+
+.step-letter {
+  text-align: justify;
+}
+
+.selected-step {
+  background: var(--color-primary);
+}
+
+.selected-step .step-number {
+  color: var(--color-dark);
+  background: var(--color-light);
+}
+
+.selected-step .step-title,.selected-step .step-letter {
+  color: var(--color-light);
+}
+
+.device-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.device {
+  display: flex;
+}
+
+.device-slide {
+  position: absolute;
+  display: flex;
+  padding: 0 18px;
+  transform: translateX(25%);
+
+}
+
+.slide-img {
+  z-index: 0;
+  padding: 17px 18px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.ondevice {
+  z-index: 1;
+}
+
+.mobile-device {
+  position: relative;
+}
+
+.displayed-img {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  box-shadow: none;
+}
+
+.section-fill-img {
+  position: absolute;
+}
+
+.fill-logo {
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.fill-map {
+  left: 0;
+  top: 25%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .guideline-section {
+    display: flex;
+    padding-top: 10px;
+    overflow: scroll;
+  }
+  .step {
+    min-width: 335px;
+    padding: 20px;
+  }
+  .step-title {
+    font-size: 18px;
+  }
+  .step-letter {
+    font-size: 14px;
+  }
+}

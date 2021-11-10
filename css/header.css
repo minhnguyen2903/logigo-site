@@ -1,0 +1,282 @@
+@import url('root.css');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.chevon-down {
+  transform: scale(0.5);
+}
+
+header {
+  position: relative;
+  background: url('../psd-img/motorists-to-pay-for-fuel-with-mobile-phone_0.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-fill {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color-dark);
+  opacity: 0.7;
+}
+
+.header-top-top {
+  position: relative;
+  z-index: 99;
+  height: 86px;
+  width: 100%;
+  border-bottom: solid 1px #707070;
+}
+
+.header-container {
+  display: flex;
+  height: 100%;
+  padding: 18px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-brand {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.header-brand .logigo-text {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.logigo-text {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.header__nav--dropdown {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2em;
+  height: 100%;
+}
+
+.header__nav {
+  height: 100%;
+}
+
+.header__nav ul {
+  display: flex;
+  height: 100%;
+  gap: 50px;
+}
+
+.header__nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav ul li:hover .text-hover-red {
+  color: var(--color-primary);
+  fill: var(--color-primary);
+}
+
+.header__nav ul li:hover .nav--dropdown {
+  display: initial;
+}
+
+.nav-title {
+  cursor: pointer;
+  display: flex;
+}
+
+.header__nav span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.15em;
+  color: var(--color-light);
+}
+
+.nav--dropdown {
+  display: none;
+  position: absolute;
+  top: 80%;
+  padding: 10px 0;
+  background: var(--color-light);
+}
+
+.nav--dropdown a {
+  display: block;
+  font-weight: 600;
+  color: var(--color-letter);
+  line-height: 19px;
+  padding: 10px 25px;
+}
+
+.nav--dropdown a:hover {
+  background: #EEEEEE;
+  color: var(--color-primary);
+}
+
+.dropdown-icon {
+  display: none;
+}
+
+.header__nav--language {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 6px 10px;
+  overflow: hidden;
+  border: solid 1px var(--color-light);
+  border-radius: 16px;
+  transition: 1s;
+}
+
+.language {
+  display: none;
+  align-items: center;
+  color: var(--color-light);
+  font-size: 1em;
+  font-weight: 600;
+  padding: 6px 0;
+}
+
+.chevon-down {
+  padding-top: 5px;
+}
+
+.selected-language {
+  display: flex;
+}
+
+.language span {
+  margin-left: 5px;
+}
+
+.header__banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 172px;
+  padding-bottom: 300px;
+  z-index: 10;
+}
+
+.banner__content {
+  width: 729px;
+  margin: auto;
+}
+
+.banner__content .logigo-text {
+  display: block;
+  text-align: center;
+  font-size: 112px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.banner__content p {
+  color: var(--color-light);
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20.5px;
+}
+
+.banner--action {
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logito-app img {
+  width: 19px;
+  height: 19px;
+}
+
+.logigo-slogan {
+  display: block;
+  margin: 0 auto;
+  width: 499px;
+}
+
+.logito-app {
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--color-light);
+  border-radius: 27px;
+  margin-bottom: 20px;
+}
+
+.logito-app a {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logito-app span {
+  text-transform: uppercase;
+  color: var(--color-light);
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1139px) {
+  .content-container-no-padding {
+    padding: 0 20px;
+  }
+  .header-top-top {
+    background: white;
+    height: 80px;
+    padding: 15.5px 20px;
+  }
+  
+  .header__nav--dropdown,.header__nav--language {
+    display: none;
+  }
+
+  .dropdown-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-icon img {
+    width: 26px;
+  }
+
+  .header__nav span {
+    color: var(--color-dark);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__banner .logigo-text {
+    font-size: 63px;
+  }
+  .banner__content {
+    width: calc(100% - 92px);
+  }
+  .logigo-slogan {
+    width: 100%;
+  }
+}
+
